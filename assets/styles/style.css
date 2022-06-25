@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EFF1F3;
+}
+
+header {
+    display: inline;
+}
+  
+h2 {
+    color: #00a2c6;
+}
+  
+h3 {
+    color: #00a2c6;
+}
+  
+.profile header {
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #00D9C0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: white;
+    text-align: center;
+    color: #EFF1F3;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav {
+    background-color: #00D9C0;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+   font-size: 18px;
+   font-weight: 400;
+   text-decoration: none;
+   color: white;
+}
+
+nav a:hover {
+   font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#slider--text {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+h2 small {
+    display: block;
+    color: black;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+.fade-in {
+    animation: fade 4s infinite;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: rotate3d(2, 2, 0, 48deg);
+    }
+    20% {
+        opacity: 1;
+        transform: rotate3d(0, 0, 0, 24deg);
+    }
+    80% {
+        opacity: 1;
+        transform: rotate3d(0, 0, 0, 24deg);
+    }
+    100% {
+        opacity: 0;
+        transform: rotate3d(-2, -2, 0, 48deg);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
